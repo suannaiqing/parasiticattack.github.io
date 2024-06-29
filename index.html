@@ -12,12 +12,18 @@
     width: 30%; /* 可根据需要调整宽度 */
   }
 
-    .center-video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Full height of the viewport */
-    }
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+ 
+  iframe {
+    border: none; /* Remove border if required */
+    width: 80%; /* Change width as needed */
+    height: 80%; /* Change height as needed */
+  }
 </style>
 </head>
 
@@ -28,13 +34,12 @@ Against Transfer Learning Models</h1>
 
 <img src="exp-1.png" alt="MP-based backdoor attack" class="center-image">
 
-<div class="center-video">
-    <video width="640" height="360" controls>
-        <source src="demo3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<div class="iframe-container">
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FtE5zrh34-k?si=qsxvr8LIWqzn7t36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FtE5zrh34-k?si=qsxvr8LIWqzn7t36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </body>
 
 </html>
