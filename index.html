@@ -4,12 +4,21 @@
 .centered-title {
   text-align: center;
 }
+
 .iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height of the viewport */
-  }
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+ 
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
  
   iframe {
     display: block;
@@ -28,8 +37,9 @@
 <h1 class="centered-title">Demystifying Risks of Model Parasitic Attacks
 Against Transfer Learning Models</h1>
 
-<div style="text-align: center;">
-<iframe  src="https://www.youtube.com/embed/FtE5zrh34-k?si=qsxvr8LIWqzn7t36" title="YouTube video player" ></iframe>
+
+<div class="iframe-container">
+<iframe  src="https://www.youtube.com/embed/FtE5zrh34-k?si=qsxvr8LIWqzn7t36" title="YouTube video player" > frameborder="0" allowfullscreen</iframe>
 </div>
 
 <div style="text-align: center;">
