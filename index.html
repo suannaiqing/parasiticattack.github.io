@@ -18,13 +18,16 @@
     height: 630px;
 }
 
+  .centered-paragraph {
+    width: 50%; /* 设置段落宽度为视口宽度的50% */
+    margin: 0 auto; /* 上下保持为0，左右自动（居中） */
+    word-wrap: break-word; /* 允许在单词内换行 */
+  }
+
 p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   width: 130ch; /* 设置长度为50个字符宽 */
-  text-align: center;
-  word-wrap: break-word; /* 旧版的浏览器支持 */
-  overflow-wrap: break-word; /* 标准属性 */
 }
 
 </style>
@@ -36,7 +39,7 @@ p {
 <h1 class="centered-title">Demystifying Risks of Model Parasitic Attacks
 Against Transfer Learning Models</h1>
 
-<p>We demonstrate two physical-world MP-based semantic backdoor attacks. One is embedding Road sign 66 into the stop sign (video 1), and the other is embedding the streetlight into the speed limit 120km/h sign (video 2).</p>
+<p class="centered-paragraph">We demonstrate two physical-world MP-based semantic backdoor attacks. One is embedding Road sign 66 into the stop sign (video 1), and the other is embedding the streetlight into the speed limit 120km/h sign (video 2).</p>
 
 <div class="iframe-container">
 <iframe  width="1120" height="630" src="https://www.youtube.com/embed/FtE5zrh34-k?si=qsxvr8LIWqzn7t36" title="YouTube video player" > frameborder="0" allowfullscreen</iframe>
