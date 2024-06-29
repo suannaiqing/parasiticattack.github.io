@@ -5,21 +5,22 @@
   text-align: center;
 }
 
-.iframe-container {
+.video-container {
     position: relative;
+    width: 100%; /* 或者具体宽度 */
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; /* 16:9 宽高比 */
 }
  
-.iframe-container iframe {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
-    height: 45%;
-    border: none;
-}
- 
+    width: 100%;
+    height: 100%;
+    transform: scale(0.45); /* 缩小45% */
+    transform-origin: center center; /* 使缩放从中心开始 */
+} 
   iframe {
     display: block;
     margin: 0;
@@ -38,7 +39,7 @@
 Against Transfer Learning Models</h1>
 
 
-<div class="iframe-container">
+<div class="video-container">
 <iframe  src="https://www.youtube.com/embed/FtE5zrh34-k?si=qsxvr8LIWqzn7t36" title="YouTube video player" > frameborder="0" allowfullscreen</iframe>
 </div>
 
