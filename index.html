@@ -21,8 +21,10 @@
 p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
-  width: 100ch; /* 设置长度为50个字符宽 */
+  width: 130ch; /* 设置长度为50个字符宽 */
   text-align: center;
+  word-wrap: break-word; /* 旧版的浏览器支持 */
+  overflow-wrap: break-word; /* 标准属性 */
 }
 
 </style>
